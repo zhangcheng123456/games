@@ -1,15 +1,21 @@
 /**app.wxss**/
+
 .container {
-  height: 568px;
+  /* height: 100%; *//* display: flex; *//* flex-direction: column; *//* align-items: center; *//* justify-content: space-between; *//* padding: 200rpx 0; *//* box-sizing: border-box; */
+  position: fixed;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
-.canvas {
-  width: 375px;
-  height: 568px;
+  align-items: center; /*垂直居中*/
 }
 
+.canvas {
+  /* width: 375px; *//* height: 100%; */
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+}

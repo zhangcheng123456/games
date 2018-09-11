@@ -27,11 +27,11 @@ Page({
         fly.touchclick();
     },
     onShow: function () {
-      var hbheight;
+      var hbheight, hbweight;
       wx.getSystemInfo({
         success: function (res) {
-         //console.info(res.windowHeight);
           hbheight = res.windowHeight;
+          hbweight = res.windowWidth;
         }
       });
         const fly = this.fly = new WxFly(
@@ -39,7 +39,7 @@ Page({
                 ctx: wx.createContext(),
                 id: 'plainId',
                 height: hbheight+32,
-                width: 375,
+                 width: hbweight,
             });
         fly.on('over', packet => {
             this.setData({ score: packet.score, modalHidden: "" });
